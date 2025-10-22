@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Friends Form 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      width: 450px;
+      max-width: 90vw;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #6a1b9a;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea, select, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-family: inherit;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .checkbox-group label {
+      width: 48%;
+      font-weight: normal;
+    }
+
+    button {
+      background-color: #6a1b9a;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      border: none;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #4a0072;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <h2>Fun Friends Questionnaire 💌</h2>
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="age">Your Age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+    <label for="mood">How are you feeling today?</label>
+    <select id="mood" name="mood">
+      <option>😊 Happy</option>
+      <option>😴 Sleepy</option>
+      <option>😢 Sad</option>
+      <option>😡 Angry</option>
+      <option>🤩 Excited</option>
+    </select>
+
+    <label>According to you, how good am I?</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="goodness" value="Awesome 😎"> Awesome 😎</label>
+      <label><input type="checkbox" name="goodness" value="Funny 😂"> Funny 😂</label>
+      <label><input type="checkbox" name="goodness" value="Kind 💕"> Kind 💕</label>
+      <label><input type="checkbox" name="goodness" value="Smart 🧠"> Smart 🧠</label>
+      <label><input type="checkbox" name="goodness" value="Creative 🎨"> Creative 🎨</label>
+      <label><input type="checkbox" name="goodness" value="Caring 🌸"> Caring 🌸</label>
+      <label><input type="checkbox" name="goodness" value="Cool 😎"> Cool 😎</label>
+      <label><input type="checkbox" name="goodness" value="Best Friend 💖"> Best Friend 💖</label>
+    </div>
+
+    <label>What are your hobbies? (Tick all that apply)</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="hobbies" value="Reading 📚"> Reading 📚</label>
+      <label><input type="checkbox" name="hobbies" value="Drawing ✏️"> Drawing ✏️</label>
+      <label><input type="checkbox" name="hobbies" value="Painting 🎨"> Painting 🎨</label>
+      <label><input type="checkbox" name="hobbies" value="Singing 🎤"> Singing 🎤</label>
+      <label><input type="checkbox" name="hobbies" value="Dancing 💃"> Dancing 💃</label>
+      <label><input type="checkbox" name="hobbies" value="Cooking 🍳"> Cooking 🍳</label>
+      <label><input type="checkbox" name="hobbies" value="Baking 🧁"> Baking 🧁</label>
+      <label><input type="checkbox" name="hobbies" value="Gardening 🌿"> Gardening 🌿</label>
+      <label><input type="checkbox" name="hobbies" value="Crocheting 🧶"> Crocheting 🧶</label>
+      <label><input type="checkbox" name="hobbies" value="Knitting 🧵"> Knitting 🧵</label>
+      <label><input type="checkbox" name="hobbies" value="Watching Movies 🎬"> Watching Movies 🎬</label>
+      <label><input type="checkbox" name="hobbies" value="Playing Games 🎮"> Playing Games 🎮</label>
+      <label><input type="checkbox" name="hobbies" value="Traveling 🌍"> Traveling 🌍</label>
+      <label><input type="checkbox" name="hobbies" value="Exercising 💪"> Exercising 💪</label>
+      <label><input type="checkbox" name="hobbies" value="Photography 📸"> Photography 📸</label>
+      <label><input type="checkbox" name="hobbies" value="Listening to Music 🎧"> Listening to Music 🎧</label>
+      <label><input type="checkbox" name="hobbies" value="Writing ✍️"> Writing ✍️</label>
+      <label><input type="checkbox" name="hobbies" value="Journaling 📔"> Journaling 📔</label>
+      <label><input type="checkbox" name="hobbies" value="Acting 🎭"> Acting 🎭</label>
+      <label><input type="checkbox" name="hobbies" value="Collecting Things 🪶"> Collecting Things 🪶</label>
+      <label><input type="checkbox" name="hobbies" value="Watching Anime 🎏"> Watching Anime 🎏</label>
+      <label><input type="checkbox" name="hobbies" value="Volunteering 💖"> Volunteering 💖</label>
+      <label><input type="checkbox" name="hobbies" value="Hiking ⛰️"> Hiking ⛰️</label>
+      <label><input type="checkbox" name="hobbies" value="Playing Sports ⚽"> Playing Sports ⚽</label>
+      <label><input type="checkbox" name="hobbies" value="DIY Crafts ✂️"> DIY Crafts ✂️</label>
+    </div>
+
+    <label for="animal">If I were an animal, what animal would I be?</label>
+    <input type="text" id="animal" name="animal" placeholder="Type the animal 🐾">
+
+    <label for="whyAnimal">Why did you choose that animal?</label>
+    <textarea id="whyAnimal" name="whyAnimal" rows="3" placeholder="Tell me why 🦋"></textarea>
+
+    <label for="bestAt">What do you think I’m best at?</label>
+    <textarea id="bestAt" name="bestAt" rows="3" placeholder="Type what I'm really good at ✨"></textarea>
+
+    <label for="worstAt">What do you think I’m bad at? (Be honest 😅)</label>
+    <textarea id="worstAt" name="worstAt" rows="3" placeholder="Type what I'm not so good at..."></textarea>
+
+    <label for="secret">Your Biggest Secret (I promise I won’t tell 🤫):</label>
+    <textarea id="secret" name="secret" rows="3" placeholder="Write your secret here..."></textarea>
+
+    <button type="submit">Send 💌</button>
+  </form>
+</body>
+</html>
+
